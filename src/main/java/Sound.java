@@ -20,13 +20,13 @@ public class Sound
     for(int i = 0; i < samples.length;i++){
       if(samples[i] > limit){
         samples[i] = limit;
-        changes++
+        changes++;
       } else if(samples[i] < -limit){
         samples[i] = -limit];
         changes++;
-    }
+      }
     return changes;
-  }
+    }
   }
 
 

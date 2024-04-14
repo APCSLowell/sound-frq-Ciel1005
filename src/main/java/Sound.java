@@ -18,12 +18,11 @@ public class Sound
     /* to be implemented in part (a) */
     int changes = 0;
     for(int i = 0; i < samples.length;i++){
-      if(samples[i] < 0){
-        int absolute = sample[i]*(-1);
-        if(absolute > limit){
-          changes++;
-        }
-      } else if(samples[i] > limit)
+      if(samples[i] > limit){
+        samples[i] = limit;
+        changes++
+      } else if(samples[i] < -limit){
+        samples[i] = -limit];
         changes++;
     }
     return changes;
